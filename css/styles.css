@@ -62,25 +62,21 @@ img {
 }
 
 .container {
-    width: 1158px;
-    /*
-    max-width: 1158; */
+    max-width: 428px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-.section {
-    padding-top: 0;
-    padding-bottom: 120px;
-}
+/* .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+} */
 .section-feature,
-.section-team, .section-customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.section-team,
+.section-customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
-
-
-
 /* -----Заголовки Главной----- */
 .section-title {
     color: var(--title-text-color);
@@ -92,17 +88,24 @@ img {
     margin-top: 0;
     margin-bottom: 72px;
 }
-.section-title-item,.section-title-team {
+.section-title-item {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.section-title-team {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    /* text-transform: uppercase; */
     margin-top: 0;
-    margin-bottom: 8px;    
+    margin-bottom: 8px;
 }
-
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -115,6 +118,34 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .section-team {
+        padding-bottom: 104px;
+    }
+}
+    
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1158px;
+    }
+    /* section {
+        padding-bottom: 120px;
+    } */
+    .section-feature,
+    .section-team,
+    .section-customers {
+        padding-top: 120px; 
+        padding-bottom: 120px;
+    }
+    .section-title-item {
+        font-size: 20px;
+    }
+}
+
 
 /* ------Шапка Site NAV------ */
 /* --LOGO-- */
@@ -131,6 +162,7 @@ img {
 .logo-header {
     color: var(--title-text-color);
 }
+
 
 /* --Navigation-- */
 header {
@@ -215,31 +247,49 @@ header {
     color: var(--accent-color);
 }
 
+/* @media screen and (min-width: 768px) {
+    .section-team {
+        padding-bottom: 104px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-feature,
+    .section-team,
+    .section-customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .section-title-item {
+        font-size: 20px;
+    }
+} */
 
 
 /* ----Главный экран HERO---- */
 .hero {
     background-color: var(--footer-bg-color);
-    max-width: 1440px;
+    max-width: 767px;
     margin: 0 auto;
     background-image: 
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-hero.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 192px; 
-    padding-bottom: 192px;  
+    padding-top: 112px; 
+    padding-bottom: 112px;  
 }
 .hero-title {
     color: var(--text-white-color);
-    font-weight: 500;
-    font-size: 56px;
-    line-height: 1.07;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    width: 492px;
+    width: 318px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 /* ---Анимирование Главного заголовка--- */
 
@@ -258,10 +308,8 @@ header {
         opacity: 1;
         transform: translateY (0);
     }
-
 }
-
-
+========================================
 .button {
     font-family: inherit;
     cursor: pointer;
@@ -310,10 +358,40 @@ header {
         opacity: 1;
         transform: translateY (0);
     }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        max-width: 1199px;
+        padding-top: 111px;
+        padding-bottom: 108px;
+    }
+    .hero-title {
+        margin-bottom: 40px;
+        width: 494px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
 
 }
 
-/* ---Преимущества "FEATURE"--- */
+@media screen and (min-width: 1200px) {
+    .hero {
+        max-width: 1440px;
+        padding-top: 192px;
+        padding-bottom: 192px;
+    }
+
+    .section-title-item {
+        font-size: 20px;
+        margin-bottom: 48px;
+    }
+}
+
+
+
+/* ============================
+---Преимущества "FEATURE"--- */
 
 .feature-list {
     display: flex;
