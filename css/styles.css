@@ -67,10 +67,10 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
-/* .section {
+.section {
     padding-top: 96px;
     padding-bottom: 96px;
-} */
+} 
 .section-feature,
 .section-team,
 .section-customers {
@@ -132,9 +132,9 @@ img {
     .container {
         max-width: 1158px;
     }
-    /* section {
+    section {
         padding-bottom: 120px;
-    } */
+    } 
     .section-feature,
     .section-team,
     .section-customers {
@@ -309,7 +309,7 @@ header {
         transform: translateY (0);
     }
 }
-========================================
+/* ======================================== */
 .button {
     font-family: inherit;
     cursor: pointer;
