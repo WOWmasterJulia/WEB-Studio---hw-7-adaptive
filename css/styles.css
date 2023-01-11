@@ -482,7 +482,8 @@ header {
     }
 }
 
-/* ----Наша команда TEAM---- */
+/* ==================================
+------ Наша команда TEAM --------- */
 .section-team {
     background-color: var(--second-bg-color);
 }
