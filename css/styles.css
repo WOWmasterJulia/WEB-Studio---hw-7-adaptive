@@ -573,16 +573,19 @@ header {
     background-color: var(--icons-hover-color);
 }
 @media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1200px) {
     .team {
         display: flex;
+        flex-wrap: wrap;
     }
     .team .item {
         width: 264px;
         margin-right: 24px;
         margin-bottom: 0;
     }
+    .services .item:nth-child(2n) {
+        margin-right: 0;
+    }
+@media screen and (min-width: 1200px) {
     .services .item:nth-child(4n) {
         margin-right: 0;
     }
@@ -762,12 +765,9 @@ header {
 /* ------------------------
  ------ форма футера ------  */
 
-.form-group {
-    /* не надо
-    padding-top: 100px;
-    padding-bottom: 130px; */
+/* .form-group {
     margin-left: 80px;
-}
+} */
 .form-group-title {
     font-weight: 500;
     font-size: 16px;
@@ -777,9 +777,9 @@ header {
 
     margin-bottom: 16px;
 }
-.form-group-items {
+/* .form-group-items {
     display: flex;
-}
+} */
 
 .form-group-items > input {
     width: 264px;
@@ -822,9 +822,16 @@ input::placeholder {
     background-color: var(--accent-color);
     border-radius: 4px;
 }
-
-
-
+@media screen and (min-width: 768px) {
+    .form-group-items {
+        display: flex;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .form-group {
+        margin-left: 80px;
+    }
+}
 
 
 /* ========================
