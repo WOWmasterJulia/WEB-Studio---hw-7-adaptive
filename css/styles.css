@@ -537,9 +537,11 @@ header {
 .section-team {
     background-color: var(--second-bg-color);
 }
-/* .team {
-    display: flex;
-} */
+.team {
+    /* display: flex; */
+    column-gap: 24px;
+    row-gap: 56px;
+}
 .team .item {
     width: 260px;
     margin-bottom: 72px;
