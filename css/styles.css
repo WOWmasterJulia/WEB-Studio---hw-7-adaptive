@@ -426,8 +426,18 @@ header {
 ---Преимущества "FEATURE"--- */
 
 .feature-list {
-    display: column;
+    /* display: column; */
 } 
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+}
+
+.feature-list .item {
+    flex-basis: calc(100% - 24px) / 2;
+}
 .feature-list .item {
     /* width: 264px;
     margin-right: 24px; */
@@ -456,7 +466,7 @@ header {
     margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
-    .feature-list {
+    /* .feature-list {
         display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
@@ -464,7 +474,7 @@ header {
     }
     .feature-list .item {
         flex-basis: calc(100% - 24px) / 2;   
-    }
+    } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -473,7 +483,7 @@ header {
         flex-wrap: nowrap;
     }
     .feature-list .item {
-        width: 264px;
+        flex-basis: calc(100% - 72px) / 4;
         margin-right: 24px;
     }
     .feature-list .item:nth-child(4n) {
@@ -499,7 +509,7 @@ header {
 /* =============================
 -------Услуги SERVICES------  */
 .section-services {
-    /* display: none;    */
+    display: none;    
 }
 
 @media screen and (min-width: 768px) {
@@ -507,13 +517,14 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
-    .section-services {    
+    .section-services { 
+        display: block;   
     }
     .services {
         display: flex;
     }
     .services .item {
-        width: 360px;
+        flex-basis: calc(100% - 48px) / 3;
         margin-right: 24px;
     }
     .services .item:nth-child(3n) {
