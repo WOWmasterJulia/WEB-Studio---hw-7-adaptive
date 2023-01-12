@@ -522,14 +522,16 @@ header {
     }
     .services {
         display: flex;
+        justify-content: center;
     }
     .services .item {
         flex-basis: calc(100% - 48px) / 3;
-        margin-right: 24px;
+        margin-right: 24px; 
+        /* column-gap: 24px; */
     }
     .services .item:nth-child(3n) {
         margin-right: 0;
-    }
+    } 
 }
 
 /* ==================================
@@ -541,6 +543,7 @@ header {
     /* display: flex; */
     column-gap: 24px;
     row-gap: 56px;
+    justify-content: center;
 }
 .team .item {
     width: 260px;
@@ -625,6 +628,7 @@ header {
     margin: 0 auto;
     gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team-soc-item {    
