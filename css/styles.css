@@ -62,7 +62,7 @@ img {
 }
 
 .container {
-    max-width: 428px;
+    min-width: 320px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -123,7 +123,7 @@ img {
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        width: 768px;
     }
     .section-team {
         padding-bottom: 104px;
@@ -132,7 +132,7 @@ img {
     
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1158px;
+        width: 1158px;
     }
     section {
         padding-bottom: 120px;
@@ -149,8 +149,35 @@ img {
     }
 }
 
+/* Из слака:
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* ------Шапка Site NAV------ */
+@media screen and (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+    }
+} */
+
+
+/* ==========================
+------Шапка Site NAV------ */
 /* --LOGO-- */
 .logo {
     display: block;
@@ -250,7 +277,8 @@ header {
     color: var(--accent-color);
 }
 
-/* @media screen and (min-width: 768px) {
+/* не готово:
+@media screen and (min-width: 768px) {
     .section-team {
         padding-bottom: 104px;
     }
@@ -270,7 +298,8 @@ header {
 } */
 
 
-/* ----Главный экран HERO---- */
+/* ==========================
+----Главный экран HERO---- */
 .hero {
     background-color: var(--footer-bg-color);
     max-width: 767px;
@@ -462,7 +491,7 @@ header {
 /* =============================
 -------Услуги SERVICES------  */
 .section-services {
-    display: none;   
+    /* display: none;    */
 }
 
 @media screen and (min-width: 768px) {
@@ -470,7 +499,9 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
-    .section-services {
+    .section-services {    
+    }
+    .services {
         display: flex;
     }
     .services .item {
@@ -487,19 +518,20 @@ header {
 .section-team {
     background-color: var(--second-bg-color);
 }
-.team {
+/* .team {
     display: flex;
-}
+} */
 .team .item {
-    width: 264px;
-    margin-right: 24px;
+    width: 260px;
+    margin-bottom: 72px;
+    /* margin-right: 24px;  */
     background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
-.services .item:nth-child(4n) {
+/* .services .item:nth-child(4n) {
     margin-right: 0;
-}
+} */
 .team-content {
     text-align: center;
     padding: 32px 16px;
@@ -508,9 +540,10 @@ header {
 .team-soc-list {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 0 auto; 
     gap: 24px;
-    margin-top: 8px;
+    margin-top: 8px; 
 }
 .team-soc-item {
     
@@ -525,7 +558,8 @@ header {
     align-items: center;
 
     /* ---анимация--- */
-    /* transition-property: background-color;
+    /* не надо
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 1s; */
@@ -535,30 +569,43 @@ header {
     width: 16px;
     height: 16px;
 }
-/* .team-soc-icon:hover {
-    fill: var(--icons-hover-color);
-} */
 .team-soc-link:hover, .team-soc-link:focus  {
     background-color: var(--icons-hover-color);
 }
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        display: flex;
+    }
+    .team .item {
+        width: 264px;
+        margin-right: 24px;
+        margin-bottom: 0;
+    }
+    .services .item:nth-child(4n) {
+        margin-right: 0;
+    }
+}
 
 
 
-
-/* ------Услуги CUSTOMERS------  */
+/* =============================
+------Услуги CUSTOMERS------  */
 .customers-list {
-    display: flex;
+    display: flex; 
     align-items: center;
     margin: 0 auto;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
-.team-soc-item {
-    
+.team-soc-item {    
 }
 
 .customer-link {
-    width: 168px;
+    /* min-width: calc(100% / 2); */
+    width: 190px;
     height: 88px;
     display: flex;
     border-radius: 4px;
@@ -583,11 +630,24 @@ header {
     width: 104px;
     height: 56px;
 }
-/* .customer-icon:hover {
+/* не надо
+.customer-icon:hover {
     fill: var(--accent-color);
 }  */
  
-
+@media screen and (min-width: 768px) {
+    .customers-list {
+        /* display: flex; */
+        
+    }
+    .customer-link {
+        width: 168px;
+    }
+@media screen and (min-width: 1200px) 
+    /* .customer-link {
+        width: 168px;
+    } */
+}
 
 /*========================== 
 ------Подвал FOOTER------ */
@@ -595,21 +655,26 @@ header {
     background-color: var(--footer-bg-color);
 }
 .footer-content {
-    display: flex;
-    padding-top: 100px;
+    /* display: flex; */
+    padding-top: 96px;
+    padding-bottom: 96px;
     
 }
+.last-logo {
+    /* text-align: center; */
+}
 .logo-text {
-    margin-right: 120px;
-    padding-bottom: 100px;
+    /* margin-right: 120px; */
+    padding-bottom: 72px;
+    display: block;
+    justify-content: center;
+    text-align: center;
 }  
-.footer-social {
-    /* padding-top: 100px; */
-    /* padding-bottom: 130px; */
-} 
+ 
 .logo-footer {
     color: var(--logo-text-white);
     letter-spacing: 0.02em;
+    
 }
 .footer-text {
     color: var(--text-footer-white);
@@ -631,6 +696,7 @@ header {
     margin: 0 auto;
     gap: 16px;
     margin-top: 16px;
+    margin-bottom: 72px;
 }
 
 .footer-soc-item {}
@@ -648,8 +714,6 @@ header {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .footer-soc-link:hover,
 .footer-soc-link:focus {
     background-color: var(--icons-hover-color);
@@ -659,16 +723,48 @@ header {
     height: 20px;
 }
 
-/* .footer-soc-icon:hover {
+/* не надо
+.footer-soc-icon:hover {
     fill: var(--icons-hover-color);
 } */
 
 
+@media screen and (min-width: 768px) {}
 
-/* ---форма футера--- */
+    .footer-soc-list {
+        /* margin-bottom: 0; */
+    }
+    .last-logo {
+        
+    }
+    .logo-text {
+        
+        text-align: left;
+    }
+@media screen and (min-width: 1200px) {
+    .footer-content {
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .logo-text {
+        margin-right: 120px;
+        /* padding-bottom: 100px; */
+        padding-bottom: 0;
+        /* text-align: left; */
+    }
+    .footer-soc-list {
+        margin-bottom: 0;
+    }
+}
+
+/* ------------------------
+ ------ форма футера ------  */
 
 .form-group {
-    /* padding-top: 100px;
+    /* не надо
+    padding-top: 100px;
     padding-bottom: 130px; */
     margin-left: 80px;
 }
