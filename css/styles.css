@@ -200,17 +200,18 @@ header {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.site-nav {
-    display: flex;
-    margin-left: 77px;
-}
-.nav .item:not(:last-child) {
-    margin-right: 40px;
-}
 .main-nav {
     display: flex;
     align-items: center;
 }
+.site-nav {
+    display: none;
+    
+} 
+/* .nav .item:not(:last-child) {
+    margin-right: 40px;
+} */
+
 .site-nav .nav-link {
     color: var(--title-text-color);
     display: block;
@@ -256,19 +257,19 @@ header {
 
 /* --Contacts-- */
 .contact-nav {
-    display: flex;
-    margin-left: auto;
+    display: none;
+    /* margin-left: auto; */
 }
-.contact-nav .item +.item {
+/* .contact-nav .item +.item {
     margin-left: 40px;
-}
+} */
 .contact-nav-link {
     text-decoration: none;
     color: var(--primary-text-color);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
 
     /* ---анимация--- */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -277,25 +278,46 @@ header {
     color: var(--accent-color);
 }
 
-/* не готово:
+
 @media screen and (min-width: 768px) {
-    .section-team {
-        padding-bottom: 104px;
+    .main-nav {
+            display: flex;
+            align-items: center;
+        }
+    .site-nav {
+            display: flex;
+            margin-left: 120px;
+        }
+    .nav .item:not(:last-child) {
+        margin-right: 40px;
     }
+    .contact-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-left: 118px;
+    }
+    
 }
 
 @media screen and (min-width: 1200px) {
-    .section-feature,
-    .section-team,
-    .section-customers {
-        padding-top: 120px;
-        padding-bottom: 120px;
+    .site-nav {
+            margin-left: 77px;
+        }
+    .contact-nav {
+        display: flex;
+        margin-left: auto;
+        flex-direction: row;
     }
-
-    .section-title-item {
-        font-size: 20px;
+    .contact-nav-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
-} */
+    .contact-nav .item+.item {
+        margin-left: 40px;
+    }
+} 
 
 
 /* ==========================
