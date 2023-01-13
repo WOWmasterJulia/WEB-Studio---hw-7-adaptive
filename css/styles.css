@@ -278,8 +278,9 @@ header {
     color: var(--accent-color);
 }
 .burger {
-    /* color: var(--title-text-color); */
-    border: 3px solid #2E2F42;
+    color: var(--title-text-color);
+    align-items: end;
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -299,6 +300,10 @@ header {
         flex-direction: column;
         align-items: end;
         margin-left: 118px;
+    }
+    .burger {
+        display: none;
+
     }
     
 }
