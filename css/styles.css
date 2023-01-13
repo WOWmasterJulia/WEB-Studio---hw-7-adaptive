@@ -610,13 +610,13 @@ header {
         margin-right: 24px;
         margin-bottom: 0;
     }
-    .services .item:nth-child(2n) {
+    /* .services .item:nth-child(2n) {
         margin-right: 0;
-    }
+    } */
 @media screen and (min-width: 1200px) {
-    .services .item:nth-child(4n) {
+    /* .services .item:nth-child(4n) {
         margin-right: 0;
-    }
+    } */
     .team {
         flex-wrap: nowrap;
     }
