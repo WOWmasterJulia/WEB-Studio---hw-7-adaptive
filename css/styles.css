@@ -277,7 +277,10 @@ header {
 .contact-nav-link:hover, .contact-nav-link:focus {
     color: var(--accent-color);
 }
-
+.burger {
+    /* color: var(--title-text-color); */
+    border: 3px solid #2E2F42;
+}
 
 @media screen and (min-width: 768px) {
     .main-nav {
