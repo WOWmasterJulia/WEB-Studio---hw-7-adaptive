@@ -348,7 +348,8 @@ header {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    width: 318px;
+    max-width: 338px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 72px;
@@ -431,7 +432,7 @@ header {
     }
     .hero-title {
         margin-bottom: 40px;
-        width: 496px;
+        width: 526px;
         font-size: 56px;
         line-height: 1.07;
     }
@@ -848,7 +849,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    /* margin-left: 80px; */
+    
 } 
 .form-group-title {
     font-weight: 500;
@@ -917,11 +918,13 @@ input::placeholder {
     }
     .form-group {
         align-items: flex-start;
+        margin-right: 47px;
     }
 }
 @media screen and (min-width: 1200px) {
     .form-group {
         margin-left: 80px;
+        margin-right: 0;
     }
 }
 
