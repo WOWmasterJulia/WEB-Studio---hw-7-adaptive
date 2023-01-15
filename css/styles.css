@@ -277,11 +277,11 @@ header {
 .contact-nav-link:hover, .contact-nav-link:focus {
     color: var(--accent-color);
 }
-.burger {
+/* .burger {
     color: var(--title-text-color);
     align-items: end;
     
-}
+} */
 
 @media screen and (min-width: 768px) {
     .main-nav {
@@ -301,10 +301,10 @@ header {
         align-items: end;
         margin-left: 118px;
     }
-    .burger {
+    /* .burger {
         display: none;
 
-    }
+    } */
     
 }
 
