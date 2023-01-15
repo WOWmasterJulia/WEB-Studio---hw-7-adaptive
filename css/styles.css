@@ -283,6 +283,27 @@ header {
     
 } */
 
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    /* border-radius: 50%; */
+    outline: none;
+    /* border: 3px solid #2E2F42; */
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 @media screen and (min-width: 768px) {
     .main-nav {
             display: flex;
@@ -305,7 +326,9 @@ header {
         display: none;
 
     } */
-    
+    .menu-toggle {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1200px) {
