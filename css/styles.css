@@ -285,10 +285,23 @@ header {
 .menu-container .menu-toggle {
     
 }
-.menu-toggle {
+.menu-btn-burger {
+    
+    top: 15px;
+    right: 15px;
+    display: flex;
+        align-items: center;
+        justify-content: center; 
+    margin-left: auto;  
+    background-color: transparent;
+    color: var(--title-text-color);
+    border: none;
+
+}
+.menu-btn-close {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 15px;
+    right: 15px;
 
     min-height: 40px;
     min-width: 40px;
@@ -298,14 +311,13 @@ header {
 
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    
     cursor: pointer;
-    border: none;
+    
     border-radius: 50%; 
     outline: none;
     background: #E7E9FC;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-    /* margin-left: auto; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
     color: var(--footer-bg-color);
 }
 .menu-toggle:hover,
