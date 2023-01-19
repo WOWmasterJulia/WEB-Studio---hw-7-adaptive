@@ -282,21 +282,17 @@ header {
     transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
-    
-}
 .menu-btn-burger {
     
     top: 15px;
     right: 15px;
     display: flex;
-        align-items: center;
-        justify-content: center; 
+    align-items: center;
+    justify-content: center; 
     margin-left: auto;  
     background-color: transparent;
     color: var(--title-text-color);
     border: none;
-
 }
 .menu-btn-close {
     position: absolute;
