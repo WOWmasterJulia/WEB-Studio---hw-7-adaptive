@@ -296,11 +296,21 @@ header {
 }
 .menu-btn-close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    /* top: 15px;
+    right: 15px; */
 
-    min-height: 40px;
-    min-width: 40px;
+
+    top: 40px;
+    right: 40px;
+
+    
+
+    /* min-height: 24px;
+    min-width: 24px;  */
+
+    height: 24px;
+    width: 24px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -626,11 +636,31 @@ header {
 .feature-list p {
     margin-top: 0;
     margin-bottom: 0;
+
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+    
+        letter-spacing: 0.02em;
+        max-width: 270px;
+}
+@media screen and (min-width: 428px) {
+.feature-list p {
+    /* width: 264px;
+    margin-right: 24px; */
+    max-width: 396px;
+    }
 }
 @media screen and (min-width: 768px) {
     .feature-list .item {
         flex-basis: calc((100% - 24px) / 2);
+        /* max-width: 349px; */
     } 
+    .feature-list p {
+       
+        max-width: 356px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -640,7 +670,7 @@ header {
     }
     .feature-list .item {
         flex-basis: calc((100% - 72px)) / 4;
-        margin-right: 24px;
+        /* margin-right: 24px; */
     }
     .feature-list .item:nth-child(4n) {
         margin-right: 0;
@@ -847,7 +877,7 @@ header {
 .footer-content {
     display: flex;
     flex-wrap: wrap;
-    /* column-gap: 24px; */
+    /* column-gap: 24px;  */
     padding-top: 96px;
     padding-bottom: 96px;
     justify-content: center;
@@ -925,9 +955,28 @@ header {
     fill: var(--icons-hover-color);
 } */
 
+@media screen and (min-width: 502px) {
+    .logo-text, .footer-social {
+        align-items: flex-start;
+        /* column-gap: 24px; */
+    }
+}
 
+@media screen and (min-width: 580px) {
+    .footer-content {    
+        column-gap: 24px; 
+    }
+}
+@media screen and (min-width: 648px) {
+    .footer-content {
+        justify-content:left
+    }
+}
 @media screen and (min-width: 768px) {
-  
+    .footer-content {
+        min-width: 565px;
+        column-gap: 24px; 
+    }
     .footer-soc-list {
         /* margin-bottom: 0; */
     }
@@ -950,6 +999,7 @@ header {
         flex-wrap: nowrap;
         padding-top: 100px;
         padding-bottom: 100px;
+        column-gap:0pt
     }
     .logo-text {
         margin-right: 120px;
@@ -1252,7 +1302,7 @@ portfolio)*/
     min-height: 576px;  */
 
     width: 100%;
-    max-width: 392px;
+    min-width: 270px;
     /* max-height: 576px;  */
 
     background: #FCFCFC;
