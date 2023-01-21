@@ -56,8 +56,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 img {
     display: block;
-    width: 100%;
-    /* max-width: 100%; */
+    /* width: 100%; */
+    max-width: 100%;
     height: auto;
 }
 
@@ -465,13 +465,15 @@ header {
     background-color: var(--footer-bg-color);
     max-width: 767px;
     margin: 0 auto;
-    background-image: 
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-hero.jpg");
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 112px; 
-    padding-bottom: 112px;  
+    padding-bottom: 112px;
+    background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-hero.jpg");
+    
 }
 .hero-title {
     color: var(--text-white-color);
