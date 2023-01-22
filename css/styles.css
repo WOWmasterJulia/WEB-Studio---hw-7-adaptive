@@ -553,8 +553,8 @@ header {
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-(min-width: 768px) and (min-resolution: 192dpi),
-(min-width: 768px) and (min-resolution: 2dppx) {
+(min-width: 1200px) and (min-resolution: 192dpi),
+(min-width: 1200px) and (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/main/1-hero/bg-hero_desk@2x_.jpg");
     }
