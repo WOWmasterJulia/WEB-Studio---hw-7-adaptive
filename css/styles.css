@@ -1244,7 +1244,7 @@ portfolio)*/
 
     padding-top: 0;
     flex-basis: calc((100%  - 30px));
-    max-width: 360px;
+    max-width: 396px;
 }
 
 .photo-text {
@@ -1363,6 +1363,7 @@ portfolio)*/
     .work-list>.item {
         padding-top: 0;
         flex-basis: calc((100% - 24px) /2);
+        max-width: 356px;
     }
 }
 
@@ -1380,6 +1381,7 @@ portfolio)*/
     .work-list>.item {
         padding-top: 0;
         flex-basis: calc((100% - 48px) /3);
+        max-width: 360px;
     }
 }
 
