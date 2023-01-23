@@ -1243,7 +1243,8 @@ portfolio)*/
     /* flex-basis: calc(100% / 3 - 24px); */
 
     padding-top: 0;
-    flex-basis: calc((100%  - 30px));    
+    flex-basis: calc((100%  - 30px));
+    max-width: 360px;
 }
 
 .photo-text {
