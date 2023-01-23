@@ -1174,7 +1174,10 @@ input::placeholder {
 /* .portfolio-section-title {
     color: var(--title-text-color);
 } */
-
+.section-portfolio {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
 
 /* _____1_____ 
 (filter)*/
@@ -1229,7 +1232,8 @@ input::placeholder {
 
 /* ____2_____ 
 portfolio)*/
-  
+
+
 .work-list {
     display: flex; 
     flex-wrap: wrap;
@@ -1238,8 +1242,6 @@ portfolio)*/
     justify-content: center;
     column-gap: 24px;
    } 
-
-
 
 .work-list > .item {
     /* margin-right: 24px;  
@@ -1280,7 +1282,6 @@ portfolio)*/
 .work-list>.item:focus .overlay {
     transform: translateY(0);
 }
-
 на .work:hover .overlay,
 .work:focus .overlay {
     transform: translateY(0);
@@ -1307,10 +1308,7 @@ portfolio)*/
     padding-bottom: 0;
 } 
 
-.section-portfolio {
-    padding-top: 48px;
-    padding-bottom: 48px;
-} 
+
 .work {
     display: block;
     text-decoration: none;  
@@ -1359,9 +1357,9 @@ portfolio)*/
         margin-bottom: 64px;
     }
     .work-list {
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
-        row-gap: 48px;
+        row-gap: 48px; */
         /* column-gap: 24px; */
         justify-content:left;
     }
