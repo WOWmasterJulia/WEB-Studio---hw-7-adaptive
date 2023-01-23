@@ -1232,10 +1232,13 @@ portfolio)*/
   
 .work-list {
     display: flex; 
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     row-gap: 48px;
     justify-content: center;
    } 
+
+
 
 .work-list > .item {
     /* margin-right: 24px;  
