@@ -92,11 +92,23 @@
             <li class="item">
               <a href="#" class="work">
                 <div class="photo-text">
-                  <img
-                    src="./images/img-portfolio1.jpg"
-                    alt="many screen whith banking App"
-                    width="360"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      arcset="./images\portfolio\img1-desk@1x_.jpg 1x, ./images\portfolio\img1-desk@2x_.jpg 2x"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      arcset="./images\portfolio\img1-tab@1x_.jpg 1x, ./images\portfolio\img1-tab@2x_.jpg 2x"
+                    />
+                    <img
+                      src="./images\portfolio\img1-mob@1x_.jpg "
+                      alt="many screen whith banking App"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
