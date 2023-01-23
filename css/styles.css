@@ -1362,6 +1362,7 @@ portfolio)*/
         flex-wrap: wrap;
         row-gap: 48px;
         column-gap: 24px;
+        justify-content:left;
     }
     .work-list>.item {
         padding-top: 0;
