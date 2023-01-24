@@ -1345,9 +1345,9 @@ portfolio)*/
 /* @media screen and (min-width: 428px) {
     .filters-button {
         justify-content: left;    
-    } */
+    } 
     
-}
+}*/
 @media screen and (min-width: 768px) {
     .section-portfolio {
         padding-top: 64px;
@@ -1379,6 +1379,7 @@ portfolio)*/
     }
     .filters-button {
         margin-bottom: 72px;
+        justify-content: center;
     }
     .work-list {   
         row-gap: 40px;
